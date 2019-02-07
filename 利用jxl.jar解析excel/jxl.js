@@ -41,12 +41,12 @@ let clssheet;
     log(clsbook);
     clscell = loader.loadClass("jxl.Cell");
     log(clscell);
-   //log( clsbook.getMethods())
+   log( clsbook.getMethods())
     
 //}
 
 function readExcel() {
-        let path = files.path("./m_.xls");
+        let path = files.path("./m.xls");
            var is = new File(path);
            log(typeof(is));
            obj = clsbook.getClass();

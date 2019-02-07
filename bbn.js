@@ -1,1 +1,33 @@
-importClass("org.opencv.core.CvType"); importClass("org.opencv.core.Mat"); importClass("org.opencv.highgui.Highgui"); importClass("org.opencv.imgproc.Imgproc"); let originalMat = Highgui.imread("/sdcard/a.jpg"); let grayMat = new Mat(); let cannyEdges = new Mat(); let circles = new Mat(); Imgproc.cvtColor(originalMat, grayMat, Imgproc.COLOR_BGR2GRAY); Imgproc.Canny(grayMat, cannyEdges, 10, 100); Imgproc.HoughCircles(cannyEdges, circles, Imgproc.CV_HOUGH_GRADIENT, 1, cannyEdges.rows() / 15); let houghCircles = new Mat(); houghCircles.create(cannyEdges.rows(), cannyEdges.cols(), CvType.CV_8UC1); for (let i = 0; i < circles.cols(); i++) { let parameters = circles.get(0, i); let x, y,r; x = parameters[0];//圆心x坐标 y = parameters[1];//圆心y坐标 r = parameters[2];//圆半径 log(x+"\t\t"+y+"\t\t"+r); } 
+importClass("org.opencv.core.CvType");
+importClass("org.opencv.core.Mat");
+importClass("org.opencv.imgcodecs.Imgcodecs");
+importClass("org.opencv.imgproc.Imgproc");
+importClass(java.io.File);
+importClass(java.lang.ClassLoader);
+importClass(java.lang.Class);
+importClass(com.stardust.autojs.rhino.AndroidClassLoader);
+var c =new Imgcodecs
+let originalMaty = new Mat();
+//let originalMat = c.imread("/sdcard/a.jpg",0);
+let originalMat = c.notifyAll();
+log(originalMat);
+let parent = context.getClassLoader();
+;
+//log(c);
+
+//let fo=Class.forName("java.io.File");
+let cls;
+
+//try {
+    //cstring = Class.forName("java.lang.String", true, parent);
+    //log(cstring);
+//} catch (e) {
+    let loader = new AndroidClassLoader(parent, new File(context.getCacheDir(), "jar"));
+    let path = files.path("./opencv31.jar");
+    log(path);
+    //log(loader.loadJar(new File(path)));
+   // clscell = loader.loadClass("org.opencv.imgcodecs.Imgcodecs");
+      //clscell = loader.loadClass("Imgcodecs");
+    //log(clscell);
+   
+   //log( clscell.getMethods())

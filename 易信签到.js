@@ -10,7 +10,8 @@ click(x,y);
     }
  function qd(){
      
-     var qd=className("android.view.View").text("签到").findOne()
+var qd=className("android.view.View").text("签到").findOne()
+log(qd);
 if (qd!=null){
 var x1=qd.bounds().centerX();
 var y1=qd.bounds().centerY();

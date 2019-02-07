@@ -36,7 +36,7 @@ const max = Math.max;
 const abs = Math.abs;
 
 //如果debug为true则开启调试，将会把每次计算的棋子位置和目标位置标记在截图中并保存在一下目录
-const debug = false;
+const debug = true;
 const debug_images_dir = "/sdcard/debug/";
 
 prepare();
