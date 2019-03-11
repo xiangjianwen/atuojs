@@ -27,11 +27,11 @@ while(!click("发现"));
 sleep(5000);
 //click("星币商城");
 while(!click("签到"));
-sleep(6000);
+sleep(9000);
 qd();
-sleep(4000);
+sleep(9000);
 click(594,264)
-sleep(5000);
+sleep(9000);
 var f=className("android.view.View").text("打开宝箱").findOnce();
 if(f!=true&&f!=null){
     className("android.view.View").text("打开宝箱").findOnce().click();
@@ -54,11 +54,11 @@ sleep(4000);
 while(!click("发现"));
 sleep(5000);
 while(!click("签到"));
-sleep(4000);
+sleep(9000);
 qd();
-sleep(4000);
+sleep(9000);
 click(594,264);
-sleep(2000);
+sleep(9000);
 var f=className("android.view.View").text("打开宝箱").findOnce();
 if(f==true&&f!=null){
     className("android.view.View").text("打开宝箱").findOnce().click();

@@ -31,7 +31,7 @@ var x=yinxin[0].bounds().centerX();
 var y=yinxin[0].bounds().centerY();
 click(x,y);
     }
- function qd(){
+ function yxqd(){
      
 var qd=className("android.view.View").text("签到").findOne()
 log(qd);
@@ -51,7 +51,7 @@ sleep(5000);
 //click("星币商城");
 while(!click("签到"));
 sleep(6000);
-qd();
+yxqd();
 sleep(4000);
 click(594,264)
 sleep(5000);
@@ -60,29 +60,56 @@ if(f!=true&&f!=null){
     className("android.view.View").text("打开宝箱").findOnce().click();
     };
 
-//id("auto-id-TTMkpUfF3bgUrHvX").findOne().click();
-//while(!click("签到赚星币"));
-//className("android.view.View").text("签到赚星币").findOne().click()
-//sleep(4000);
-//click(650, 310);
-//while(!click("打开宝箱"));
-
 launchApp("易信");
-sleep(1000);
-//setScreenMetrics(720, 1440);
-//click(220, 1100);
-//
+sleep(3000);
 yx("易信");
 sleep(4000);
 while(!click("发现"));
 sleep(5000);
 while(!click("签到"));
-sleep(4000);
-qd();
+sleep(6000);
+yxqd();
 sleep(4000);
 click(594,264);
-sleep(2000);
+sleep(5000);
 var f=className("android.view.View").text("打开宝箱").findOnce();
-if(f==true&&f!=null){
+if(f!=true&&f!=null){
     className("android.view.View").text("打开宝箱").findOnce().click();
     };
+ launchApp("电信营业厅");
+ sleep(15000);
+var login = id("btnCardLogin").findOne(2000);
+ if(login!=null)
+ {
+     login.click();
+ sleep(2000);
+
+//console.show()
+var x= className("android.widget.EditText").find();
+x[1].setText("777888");
+sleep(1000);
+ swipe(174,1120,557,1121,1000);
+ }
+ sleep(3000);
+ id("com.ct.client:id/close").click();
+ sleep(1000);
+var wo= className("android.widget.TextView").find();
+//log(wo);
+var qdid;
+
+  id("com.ct.client:id/tab_mall").findOne().click()
+  sleep(3000);
+var c1=id("com.ct.client:id/ItemText").findOne();
+zgdxqd(c1);
+  //sleep(5000);
+  
+  
+  function zgdxqd(one){
+     
+
+if (one!=null){
+var x1=one.bounds().centerX();
+var y1=one.bounds().centerY();
+click(x1,y1);
+}
+}

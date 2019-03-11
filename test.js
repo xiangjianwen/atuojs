@@ -1,2 +1,1 @@
-log(importPackage(java.io))
-log(Context.currentContext)
+id("btnCardLogin").findOne().click()
