@@ -33,4 +33,4 @@ var getIp_api = http.get('http://pv.sohu.com/cityjson?ie=utf-8');
 var InetIP = getIp_api.body.string();
 eval(InetIP);
 log(returnCitySN.cip);
-log(NetworkInterface.class.getMethods());
+//log(NetworkInterface.class.getMethods());

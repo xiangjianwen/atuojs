@@ -8,8 +8,8 @@ importClass(java.lang.Class);
 importClass(com.stardust.autojs.rhino.AndroidClassLoader);
 var c =new Imgcodecs
 let originalMaty = new Mat();
-//let originalMat = c.imread("/sdcard/a.jpg",0);
-let originalMat = c.notifyAll();
+let originalMat = c.imread("/sdcard/a.jpg",0);
+//let originalMat = c.notifyAll();
 log(originalMat);
 let parent = context.getClassLoader();
 ;

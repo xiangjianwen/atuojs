@@ -46,7 +46,7 @@ let clssheet;
 //}
 
 function readExcel() {
-        let path = files.path("./m.xls");
+        let path = files.path("./z.xls");
            var is = new File(path);
            log(typeof(is));
            obj = clsbook.getClass();

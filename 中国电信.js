@@ -1,19 +1,19 @@
  launchApp("电信营业厅");
- sleep(20000);
- id("btnCardLogin").findOne().click();
- sleep(2000);
+ sleep(15000);
+ //id("btnCardLogin").findOne().click();
+ //sleep(2000);
 
 //console.show()
-var x= className("android.widget.EditText").find();
-x[1].setText("777888");
-sleep(1000);
- swipe(174,1120,557,1121,1000);
- sleep(3000);
- id("com.ct.client:id/close").click();
+//var x= className("android.widget.EditText").find();
+//x[1].setText("777888");
+//sleep(1000);
+ //swipe(174,1120,557,1121,1000);
+ //sleep(3000);
+ id("com.ct.client:id/close").findOne().click();
  sleep(1000);
-var wo= className("android.widget.TextView").find();
+//var wo= className("android.widget.TextView").find();
 //log(wo);
-var qdid;
+//var qdid;
 //for(var i=0;i<wo.size();i++)
 //{
     //var t=wo[i].text();
@@ -26,8 +26,11 @@ var qdid;
   //}
   id("com.ct.client:id/tab_mall").findOne().click()
   sleep(3000);
-var c1=id("com.ct.client:id/ItemText").findOne();
-zgdxqd(c1);
+  click("签到有礼")
+//查找签到控件  )
+//var c1=id("com.ct.client:id/tvTitle").findOne();
+//点击签到控件，找点击坐标
+//zgdxqd(c1);
   //sleep(5000);
   
   

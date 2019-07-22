@@ -7,7 +7,7 @@ let path = files.path("./xlsx.js");
 log(path);
 XLSX = require(path);
 //log(XLSX);
-f = "/sdcard/脚本/jxl/75.xlsx";
+f = "z.xlsx";
 Uint8Array.prototype.slice = Array.prototype.slice
 let databuffer = files.readBytes(f);
 //log(typeof(databuffer));
