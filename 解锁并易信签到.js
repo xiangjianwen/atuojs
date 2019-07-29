@@ -1,5 +1,5 @@
 //launchApp("Auto.js");
-auto();
+//auto();
 function yxqd(){
      
 var qd=className("android.view.View").text("签到").findOne()
@@ -33,11 +33,4 @@ if(f!=true&&f!=null){
     className("android.view.View").text("打开宝箱").findOnce().click();
     };
 
-launchApp("电信营业厅");
-sleep(15000);
-id("com.ct.client:id/close").findOne().click();
-sleep(1000);
 
-id("com.ct.client:id/tab_mall").findOne().click()
-sleep(3000);
-click("签到有礼")

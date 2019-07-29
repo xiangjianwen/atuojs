@@ -1,5 +1,7 @@
 //launchApp("Auto.js");
 auto();
+device.wakeUpIfNeeded()
+
 
 sleep(1000);
 //gesture(400,1020,400,921,60);
