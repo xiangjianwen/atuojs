@@ -7,7 +7,7 @@ let path = files.path("./xlsx.js");
 log(path);
 XLSX = require(path);
 //log(XLSX);
-f = "z.xlsx";
+f = "a.xlsx";
 Uint8Array.prototype.slice = Array.prototype.slice
 let databuffer = files.readBytes(f);
 //log(typeof(databuffer));
