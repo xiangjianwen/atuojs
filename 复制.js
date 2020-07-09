@@ -1,4 +1,8 @@
-console.show()
-var c1=id("com.ct.client:id/tvTitle").findOne();
-log(c1)
-click("签到有礼")
+if(!requestScreenCapture()){
+    toast("请求截图失败");
+    exit();
+}
+//连续截图10张图片(间隔1秒)并保存到存储卡目录
+
+    captureScreen("/sdcard/screencapture"  + ".png");
+    sleep(1000);

@@ -38,7 +38,7 @@ function tk() {
     var window = floaty.window(
         <vertical>
             <text text="移动" id="mv" textColor="black" textSize="16sp" />
-            
+            <input id="tm" text="题目" textSize="16sp" lines="2"/>
             <input id="tk" text="题库" textSize="16sp" lines="2"/>
             <input id="da" text="答案" textSize="16sp" lines="2"/>
             <button id="ok" text="下一题"/>
@@ -47,7 +47,7 @@ function tk() {
 
     window.exitOnClose();
     window.ok.on("click", () => {
-        toast("傻瓜! " + window.input.text());
+       // toast("傻瓜! " + window.input.text());
         window.disableFocus();
     });
 
@@ -58,6 +58,6 @@ function tk() {
     setInterval(() => {}, 1000);
 }
 //答案
-function da() {
+function da(tm,tk) {
 
 }
